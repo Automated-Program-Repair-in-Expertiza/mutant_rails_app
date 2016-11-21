@@ -34,11 +34,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-gem 'mutant', :git => 'https://github.com/mbj/mutant.git'
-gem 'mutant-rspec'
-gem 'rspec-expectations'
-gem 'rspec-mocks'
-gem 'pry-byebug'
+  gem 'mutant', :git => 'https://github.com/mbj/mutant.git'
+  gem 'mutant-rspec', :git => 'https://github.com/mbj/mutant.git'
+  gem 'test-unit'
+  gem 'rspec-expectations'
+  gem 'rspec-mocks'
+  gem 'pry-byebug'
+  gem 'rspec-rails'
 end
 
 group :development do
